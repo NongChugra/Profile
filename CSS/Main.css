@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -48,7 +49,7 @@ header {
   font-family: "Permanent Marker", cursive;
   font-size: 450%;
   font-weight: 200;
-  padding-top: 200px;
+  padding-top: 50px;
   padding-bottom: 10px;
 }
 
@@ -138,4 +139,45 @@ main {
   flex-direction: row;
   align-items: center;
   width: 1000px;
+}
+
+.Container {
+  font-family: "Chakra Petch", sans-serif;
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Container .Text {
+  position: relative;
+  color: rgb(0, 0, 255);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.Container .Text.first-text {
+  color: rgb(0, 150, 255);
+}
+
+.Text.second-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  border-left: 4px solid rgb(0, 230, 255);
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
 }

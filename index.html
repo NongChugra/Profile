@@ -10,17 +10,38 @@
   <body>
     <aside>
       <img class="Avatar-img" src="Picture/1.jpg" />
-      <h1 class="Side-word">Main</h1>
-      <h1 class="Side-word">Profile</h1>
+      <a href="#main"><h1 class="Side-word">Main</h1></a>
+      <a href="#profile"><h1 class="Side-word">Profile</h1></a>
     </aside>
 
     <div>
-      <header>
+      <header id="main">
         <div class="Container">
-          <span></span>
           <span class="Text first-text">I'm</span>
-          <span class="Text second-text">Coding</span>
+          <span class="Text second-text"></span>
         </div>
+        <script>
+          const text = document.querySelector(".second-text");
+
+          const textload = () => {
+            setTimeout(() => {
+              text.textContent = "Coding";
+            }, 0);
+            setTimeout(() => {
+              text.textContent = "Sleeping";
+            }, 4000);
+            setTimeout(() => {
+              text.textContent = "Learning";
+            }, 8000);
+            setTimeout(() => {
+              text.textContent = "Exciting";
+            }, 12000);
+          };
+
+          textload();
+          setInterval(textload, 16000);
+        </script>
+
         <h2 class="Name">Nawaphol Tunprasert</h2>
         <hr />
         <div>
@@ -35,7 +56,7 @@
         </div>
       </header>
 
-      <main>
+      <main id="profile">
         <h1 class="Profile">Profile</h1>
         <h2 class="Topics-word">Talents</h2>
         <div class="Skill">
@@ -83,8 +104,8 @@
         </div>
         <br />
 
+        <h2 class="Topics-word">Education</h2>
         <div class="Contract-Education">
-          <h2 class="Topics-word">Education</h2>
           <div class="Text-img">
             <img class="Education-img" src="Picture/10.jpg" />
             <span class="Text">Rongkhem School</span><br />
