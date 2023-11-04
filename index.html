@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/Main.css" />
+    <script src="./JavaScript/Main.js"></script>
     <title>66070501028</title>
   </head>
 
@@ -12,6 +13,9 @@
       <img class="Avatar-img" src="Picture/1.jpg" />
       <a href="#main"><h1 class="Side-word">Main</h1></a>
       <a href="#profile"><h1 class="Side-word">Profile</h1></a>
+      <button class="Button" onclick="sayHello()" type="button">
+        Click Me!
+      </button>
     </aside>
 
     <div>
@@ -22,21 +26,6 @@
         </div>
         <script>
           const text = document.querySelector(".second-text");
-
-          const textload = () => {
-            setTimeout(() => {
-              text.textContent = "Coding";
-            }, 0);
-            setTimeout(() => {
-              text.textContent = "Sleeping";
-            }, 4000);
-            setTimeout(() => {
-              text.textContent = "Learning";
-            }, 8000);
-            setTimeout(() => {
-              text.textContent = "Exciting";
-            }, 12000);
-          };
 
           textload();
           setInterval(textload, 16000);
