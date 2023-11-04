@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(245, 245, 245);
+  padding-left: 20%;
+}
+
+aside {
+  left: 0%;
+  height: 100vh;
+  position: fixed;
+  width: 15%;
+  background: linear-gradient(315deg, rgb(50, 0, 255), rgb(0, 230, 255));
+}
+
+.Avatar-img {
+  transform: translateX(26%);
+  margin-top: 100px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.Side-word {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 250%;
+  text-align: center;
+  padding-top: 15%;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  height: 100vh;
+}
+
+.Name {
+  font-family: "Permanent Marker", cursive;
+  font-size: 450%;
+  font-weight: 200;
+  padding-top: 200px;
+  padding-bottom: 10px;
+}
+
+.Header-word {
+  font-family: "Rubik", sans-serif;
+  font-size: 160%;
+  font-weight: 1000;
+  line-height: 45px;
+}
+
+main {
+  font-family: "Rubik", sans-serif;
+}
+
+.Profile {
+  font-size: 400%;
+  font-weight: 800;
+  text-decoration: underline;
+  color: rgb(0, 0, 255);
+}
+
+.Topics-word {
+  font-size: 200%;
+  font-weight: 700;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: rgb(0, 130, 255);
+}
+
+.Skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 120px;
+}
+
+.Text-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 400px;
+}
+
+.Skill-img {
+  width: 130px;
+  height: 100px;
+  object-fit: contain;
+  padding-left: 30px;
+}
+
+.Text {
+  padding-left: 30px;
+  font-size: 150%;
+  text-decoration: none;
+  color: black;
+}
+
+.Contract-Education {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 120px;
+}
+
+.Contract-img {
+  width: 130px;
+  height: 100px;
+  object-fit: contain;
+  padding-left: 30px;
+}
+
+.Education-img {
+  width: 130px;
+  height: 100px;
+  padding-left: 30px;
+}
+
+.PCSHSCR {
+  width: 130px;
+  height: 140px;
+  padding-left: 30px;
+}
+
+.School-Text-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1000px;
+}
