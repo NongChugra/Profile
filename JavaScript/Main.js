@@ -7,12 +7,12 @@ const textload = () => {
     text.textContent = "Coding";
   }, 0);
   setTimeout(() => {
-    text.textContent = "Sleeping";
+    text.textContent = "Learning";
   }, 4000);
   setTimeout(() => {
-    text.textContent = "Learning";
+    text.textContent = "Sleeping";
   }, 8000);
   setTimeout(() => {
-    text.textContent = "Exciting";
+    text.textContent = "Growing up";
   }, 12000);
 };
